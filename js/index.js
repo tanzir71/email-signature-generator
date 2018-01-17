@@ -3,6 +3,7 @@ var textTitle = $('#textTitle');
 var textOffice = $('#textOffice');
 var textEmail = $('#textEmail');
 var textPhone = $('#textPhone');
+var textWeb = $('#textWeb');
 
 $('#nameInput').on('input',function(e){
   var nameInput = $('#nameInput').val();
@@ -28,4 +29,10 @@ $('#emailInput').on('input',function(e){
 $('#phoneInput').on('input',function(e){
   var phoneInput = $('#phoneInput').val();
   textPhone.text(phoneInput);
+});
+
+$('#webInput').on('input',function(e){
+  var webInput = $('#webInput').val();
+  textWeb.text(webInput);
+  textWeb.attr("href", "http://"+webInput);
 });

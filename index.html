@@ -7,6 +7,7 @@
   
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+      <script src='js/notify.js'></script>
   
 </head>
 
@@ -24,11 +25,11 @@
     <input name="office" id="officeInput" type="text" value="" placeholder="Office address"></input><br />
     <input name="phone" id="phoneInput" type="text" value="" placeholder="Phone number"></input><br />
     <input name="email" id="emailInput" type="email" value="" placeholder="Email address"></input><br />
-    <input name="web" id="webInput" type="text" value="" placeholder="Website"></input><br />
-    <input name="web" id="fbInput" type="text" value="" placeholder="Facebook"></input><br />
-    <input name="web" id="tweetInput" type="text" value="" placeholder="Twitter"></input><br />
-    <input name="web" id="linkedinInput" type="text" value="" placeholder="LinkedIn"></input><br />
-    <input name="web" id="otherInput" type="text" value="" placeholder="Other link"></input><br />
+    <input name="web" id="webInput" type="url" value="" placeholder="Website"></input><br />
+    <input name="fb" id="fbInput" type="url" value="" placeholder="Facebook"></input><br />
+    <input name="tweet" id="tweetInput" type="url" value="" placeholder="Twitter"></input><br />
+    <input name="linkedin" id="linkedinInput" type="url" value="" placeholder="LinkedIn"></input><br />
+    <input name="otherlink" id="otherInput" type="url" value="" placeholder="Other link"></input><br />
 
   </div>
 
@@ -81,7 +82,7 @@
 		                                    	<tr> 
 		                                            <td width="14%" height="38" valign="middle" style="padding:0 0 0 20px;"><img src="images/icon-phone_blue.png" alt="Phone" border="0" width="30" style="display:block; border:0; outline:0;" /></td>
 		                                            <!-- Edit your Phone number -->
-		                                            <td width="33%" height="38" valign="middle" align="left" style="padding:0 0 0 5px; font-family:'Lato', sans-serif, Arial; font-size:12px; line-height:24px; font-weight:400; color:#4b4d52;">+8801730496995</td>
+		                                            <td width="33%" height="38" valign="middle" align="left" style="padding:0 0 0 5px; font-family:'Lato', sans-serif, Arial; font-size:12px; line-height:24px; font-weight:400; color:#4b4d52;"><span id="textPhone">+8801730496995</span></td>
 		                                            <td width="10%" height="38" valign="middle" style="padding:0 0 0 10px;"><img src="images/icon-email_blue.png" alt="Email" border="0" width="30" style="display:block; border:0; outline:0;" /></td>
 		                                            <!-- Edit your Email address -->
 		                                            <td width="43%" height="38" valign="middle" align="left" style="padding:0 0 0 5px; font-family:'Lato', sans-serif, Arial; font-size:12px; line-height:24px; font-weight:400; color:#4b4d52;"><a href="mailto:hello@thirdhandbd.com" id="textEmail" style="text-decoration:none; color:#4b4d52;">hello@thirdhandbd.com</span></td>
@@ -97,7 +98,7 @@
 		                                    	<tr> 
 		                                            <td width="10%" height="38" valign="middle" style="padding:0 0 0 20px;"><img src="images/icon-web_blue.png" alt="Web" border="0" width="30" style="display:block; border:0; outline:0;" /></td>
 		                                            <!-- Edit your website URL -->
-		                                            <td width="90%" height="38" valign="middle" align="left" style="padding:0 0 0 5px; font-family:'Lato', sans-serif, Arial; font-size:12px; line-height:24px; font-weight:600; color:#0090e3; letter-spacing:2px;"><a href="https://www.thirdhandbd.com.com" style="text-decoration:none; color:#0090e3;">WWW.OTRION.COM</a></td>
+		                                            <td width="90%" height="38" valign="middle" align="left" style="padding:0 0 0 5px; font-family:'Lato', sans-serif, Arial; font-size:12px; line-height:24px; font-weight:600; color:#0090e3; letter-spacing:2px;"><a href="https://www.thirdhandbd.com.com" id="textWeb" style="text-decoration:none; color:#0090e3;">THIRDHANDBD.COM</a></td>
 		                        				</tr>
 		                        			</tbody>
 		                                </table>
