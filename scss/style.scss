@@ -1,0 +1,47 @@
+@import "compass/css3";
+
+body {
+  padding: 40px;
+  background: #EEE;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+}
+
+.wrapper {
+  width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  .title {
+    margin-bottom: 40px;
+  }
+}
+
+.signature {
+  float: left;
+  width: 400px;
+  padding: 10px 20px;
+  background: #FFF;
+}
+
+.form {
+  width: 400px;
+  float: left;
+  margin-right: 20px;
+}
+
+label {
+  margin-right: 20px;
+}
+
+input {
+  width: 380px;
+  margin-bottom: 7px;
+  padding: 14px 8px;
+  border: 1px solid #CCC;
+}
+
+.logo {
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid #00A0FF;
+}
