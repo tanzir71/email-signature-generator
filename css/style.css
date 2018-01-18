@@ -21,6 +21,13 @@ body {
   background: #FFF;
 }
 
+
+.btn-container {
+  float: left;
+  width: 400px;
+  padding: 10px 20px;
+}
+
 .form {
   width: 400px;
   float: left;
@@ -38,8 +45,46 @@ input {
   border: 1px solid #CCC;
 }
 
+select {
+  margin-bottom: 7px;
+  padding: 14px 8px;
+  border: 1px solid #CCC;
+}
+
 .logo {
   color: black;
   text-decoration: none;
   border-bottom: 2px solid #00A0FF;
+}
+
+.button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: #555555;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    transition: all 150ms linear;
+    opacity: .85;
+  }
+
+.btn-home {
+    margin-left: 10px;
+    background-color: #3dd28d;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+hr.style2 {
+  border-top: 3px double #8c8b8b;
 }
