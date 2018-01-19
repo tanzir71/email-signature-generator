@@ -53,7 +53,7 @@ $('#fbInput').on('input',function(e){
   var fbInput = $('#fbInput').val();
   textFB.attr("href", fbInput);
   if(fbInput.length > 5 && fbInput.includes("http") !== true) { swal("Include HTTPS.","Start your URL with https://", "warning"); }
-  if(fbInput.length < 1) { document.getElementById("hidefb").style.display = 'none'; }
+  if(fbInput == "x") { document.getElementById("hidefb").style.display = 'none'; }
   else {document.getElementById("hidefb").style.display = 'inline-block'; }
 });
 
@@ -61,12 +61,16 @@ $('#tweetInput').on('input',function(e){
   var tweetInput = $('#tweetInput').val();
   textTweet.attr("href", tweetInput);
   if(tweetInput.length > 10 && tweetInput.includes("http") !== true) { swal("Include HTTPS.","Start your URL with https://", "warning"); }
+  if(tweetInput == "x") { document.getElementById("hidetweet").style.display = 'none'; }
+  else {document.getElementById("hidetweet").style.display = 'inline-block'; }
 });
 
 $('#linkedinInput').on('input',function(e){
   var linkedinInput = $('#linkedinInput').val();
   textLinkedIn.attr("href", linkedinInput);
   if(linkedinInput.length > 10 && linkedinInput.includes("http") !== true) { swal("Include HTTPS.","Start your URL with https://", "warning"); }
+  if(linkedinInput == "x") { document.getElementById("hidelinkedin").style.display = 'none'; }
+  else {document.getElementById("hidelinkedin").style.display = 'inline-block'; }
 });
 
 $('#otherInput').on('input',function(e){
