@@ -17,9 +17,10 @@ body {
 .signature {
   /*float: left;*/
   width: 100%;
-  padding: 2.5% 5%;
+  padding: 5% 10%;
   display: inline-block;
   background: #FFF;
+  text-align: center;
 }
 
 
@@ -30,26 +31,24 @@ body {
   padding: 2.5% 5%;
 }
 
-.form {
-  width: 400px;
-  float: left;
-  margin-right: 20px;
-}
-
 label {
   margin-right: 20px;
 }
 
 input {
-  width: 75%;
-  margin-bottom: 7px;
-  padding: 14px 8px;
+  width: 85%;
+  margin-bottom: 2.5%;
+  padding: 4% 3.5%;
   border: 1px solid #CCC;
 }
 
+input.short {
+  width:60%;
+}
+
 select {
-  margin-bottom: 7px;
-  padding: 14px 8px;
+  margin-bottom: 2.5%;
+  padding: 4% 3.5%;
   border: 1px solid #CCC;
 }
 
