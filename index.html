@@ -13,12 +13,13 @@
 
 <body>
 
-  <div class="wrapper">
+  <div class="container wrapper">
   
   <h1 style="font-family: Pacifico;">Email Signature Generator</h1>
   <p class="title">Copy and paste your completed signature from the box on the right.</p>
 
-  <div class="form">
+  <div class="col-md-6" style="alight: right; padding:10px;">
+  <!--<div class="form">-->
 
     <input name="name" id="nameInput" type="text" value="" placeholder="Full name"></input><br />
     <input name="title" id="titleInput" type="text" value="" placeholder="Job title"></input><br />
@@ -26,11 +27,11 @@
     <input name="phone" id="phoneInput" type="text" value="" placeholder="Phone number"></input><br />
     <input name="email" id="emailInput" type="email" value="" placeholder="Email address"></input><br />
     <form class="form-inline">
-	    <select id="secureWeb" style="margin-right: 5px;" name="SECURE">
+	    <select  id="secureWeb" style="margin-right: 1%;" name="SECURE">
 		  <option value="http://">HTTP</option>
 		  <option value="https://">HTTPS</option>
 		</select>
-	    <input style="width:288px;" name="web" id="webInput" type="url" value="" placeholder="Website"></input><br />
+	    <input style="width:54%;" name="web" id="webInput" type="url" value="" placeholder="Website"></input><br />
 	</form>
     <input name="fb" id="fbInput" type="url" value="" placeholder="Facebook"></input><br />
     <input name="tweet" id="tweetInput" type="url" value="" placeholder="Twitter"></input><br />
@@ -41,9 +42,11 @@
     <input name="youtube" id="ytInput" type="url" value="" placeholder="YouTube"></input><br />
     <input name="otherlink" id="otherInput" type="url" value="" placeholder="Other link"></input><br />
 
+  <!--</div>-->
   </div>
 
-  	<div class="signature">
+  <div class="col-md-6" style="alight: left; padding:10px;">
+  	<div class="row signature" style="overflow:hidden;">
   		<br>
   			<div id="htmlcode">
 				<table width="320" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
@@ -144,12 +147,22 @@
 			</div>
 		<br>
 
-  	</div>
+	</div>
 
-  		<div class="btn-container">
-	  	<!--<button class="button" onclick="CopyToClipboard('htmlcode')">Copy to clipboard</button>-->
+	  	<div class="row .container-fluid btn-container">
+	  	<button class="button" onclick="CopyToClipboard('htmlcode')">Copy to clipboard</button>
 	  	<a class="button btn-home" href="https://thirdhandbd.com/">Back to Home</a>
 	  	</div>
+
+	  	<!--<div class="btn-container" style="margin-top: 30px;">
+	  	<p>HTML code displayed below.</p>
+  		<textarea rows="10" id="showhtml" style="width:100%;""></textarea>
+  		<button class="button" onclick="showhtml()">Show & Copy HTML</button>
+  		</div>-->
+
+  	</div>
+
+
 </div>
 
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

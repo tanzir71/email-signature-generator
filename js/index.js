@@ -88,8 +88,16 @@ if (document.selection) {
 
 } else if (window.getSelection) {
     var range = document.createRange();
-     range.selectNode(document.getElementById(containerid));
-     window.getSelection().addRange(range);
-     document.execCommand("copy");
-     swal("Signature copied!","Successfully copied to clipboard.", "success");
+    range.selectNode(document.getElementById(containerid));
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    swal("Signature copied!","Successfully copied to clipboard.", "success");
 }}
+
+function showhtml(){
+	var e=document.getElementById("htmlcode");
+    var content=e.innerHTML;
+    $('#showhtml').val(content);
+    $("#showhtml").select();
+    document.execCommand('copy');
+}
