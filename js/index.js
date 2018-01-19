@@ -7,6 +7,10 @@ var textWeb = $('#textWeb');
 var textFB = $('#textFB');
 var textTweet = $('#textTweet');
 var textLinkedIn = $('#textLinkedIn');
+var textInsta = $('#textInsta');
+var textSkype = $('#textSkype');
+var textPin = $('#textPin');
+var textYT = $('#textYT');
 var textOtherWeb = $('#textOtherWeb');
 
 $('#nameInput').on('input',function(e){
@@ -73,31 +77,48 @@ $('#linkedinInput').on('input',function(e){
   else {document.getElementById("hidelinkedin").style.display = 'inline-block'; }
 });
 
+$('#instaInput').on('input',function(e){
+  var instaInput = $('#instaInput').val();
+  textInsta.attr("href", instaInput);
+  if(instaInput.length > 10 && instaInput.includes("http") !== true) { swal("Include HTTPS.","Start your URL with https://", "warning"); }
+  if(instaInput == "x") { document.getElementById("hideinsta").style.display = 'none'; }
+  else {document.getElementById("hideinsta").style.display = 'inline-block'; }
+});
+
+$('#skypeInput').on('input',function(e){
+  var skypeInput = $('#skypeInput').val();
+  textSkype.attr("href", skypeInput);
+  if(skypeInput.length > 10 && skypeInput.includes("http") !== true) { swal("Include HTTPS.","Start your URL with https://", "warning"); }
+  if(skypeInput == "x") { document.getElementById("hideskype").style.display = 'none'; }
+  else {document.getElementById("hideskype").style.display = 'inline-block'; }
+});
+
+$('#pinInput').on('input',function(e){
+  var pinInput = $('#pinInput').val();
+  textPin.attr("href", pinInput);
+  if(pinInput.length > 10 && pinInput.includes("http") !== true) { swal("Include HTTPS.","Start your URL with https://", "warning"); }
+  if(pinInput == "x") { document.getElementById("hidepin").style.display = 'none'; }
+  else {document.getElementById("hidepin").style.display = 'inline-block'; }
+});
+
+$('#ytInput').on('input',function(e){
+  var ytInput = $('#ytInput').val();
+  textYT.attr("href", ytInput);
+  if(ytInput.length > 10 && ytInput.includes("http") !== true) { swal("Include HTTPS.","Start your URL with https://", "warning"); }
+  if(ytInput == "x") { document.getElementById("hideyt").style.display = 'none'; }
+  else {document.getElementById("hideyt").style.display = 'inline-block'; }
+});
+
+
 $('#otherInput').on('input',function(e){
   var otherInput = $('#otherInput').val();
   textOtherWeb.attr("href", otherInput);
   if(otherInput.length > 10 && otherInput.includes("http") !== true) { swal("Include HTTP.","Start your URL with http://", "warning"); }
+  if(otherInput == "x") { document.getElementById("hideotherweb").style.display = 'none'; }
+  else {document.getElementById("hideotherweb").style.display = 'inline-block'; }
 });
 
-function CopyToClipboard(containerid) {
-if (document.selection) { 
-    var range = document.body.createTextRange();
-    range.moveToElementText(document.getElementById(containerid));
-    range.select().createTextRange();
-    document.execCommand("copy"); 
-
-} else if (window.getSelection) {
-    var range = document.createRange();
-    range.selectNode(document.getElementById(containerid));
-    window.getSelection().addRange(range);
-    document.execCommand("copy");
-    swal("Signature copied!","Successfully copied to clipboard.", "success");
-}}
-
-function showhtml(){
-	var e=document.getElementById("htmlcode");
-    var content=e.innerHTML;
-    $('#showhtml').val(content);
-    $("#showhtml").select();
-    document.execCommand('copy');
-}
+$('#mColor').change(function(e){
+  var mColor = $('#mColor').val();
+  document.getElementById("colorChange").style.backgroundColor = mColor;
+});
