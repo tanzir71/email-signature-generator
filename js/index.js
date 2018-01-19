@@ -38,7 +38,8 @@ $('#phoneInput').on('input',function(e){
 $('#webInput').on('input',function(e){
   var webInput = $('#webInput').val();
   textWeb.text(webInput);
-  textWeb.attr("href", "http://"+webInput);
+  var secureWeb = $('#secureWeb').val();
+  textWeb.attr("href", secureWeb+webInput);
   webInput.includes("http") && swal("Don't include HTTP.","Select it from the drop-down.", "warning");
 });
 
