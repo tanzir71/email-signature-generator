@@ -52,7 +52,9 @@ $('#secureWeb').change(function(e){
 $('#fbInput').on('input',function(e){
   var fbInput = $('#fbInput').val();
   textFB.attr("href", fbInput);
-  if(fbInput.length > 10 && fbInput.includes("http") !== true) { swal("Include HTTPS.","Start your URL with https://", "warning"); }
+  if(fbInput.length > 5 && fbInput.includes("http") !== true) { swal("Include HTTPS.","Start your URL with https://", "warning"); }
+  if(fbInput.length < 1) { document.getElementById("hidefb").style.display = 'none'; }
+  else {document.getElementById("hidefb").style.display = 'inline-block'; }
 });
 
 $('#tweetInput').on('input',function(e){
