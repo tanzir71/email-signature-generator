@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Free Email Signature Generator</title>
+  <title>Email Signature Maker - Custom & Professional.</title>
+  <meta name="description" content="Use our free email signature creator to make your emails look more professional. Our customizable email signature template gives you flexibility to make it your own.">
   
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
@@ -15,8 +16,8 @@
 
   <div class="container wrapper">
   
-  <h1 style="font-family: Pacifico;">Email Signature Generator</h1>
-  <div class="row" style="width:60%; display:inline-block;"><h4>Your ready to go email signature template. <br>An email signature makes you look professional and it's a great way of marketing yourself.</h4>
+  <h1 style="font-family: Pacifico;">Email Signature Maker</h1>
+  <div class="row" style="width:60%; display:inline-block;"><h4>Your ready-to-use free email signature creator. <br>An email signature makes you look professional and it's a great way of marketing yourself.</h4>
   <hr class="dashes">
   <h5>Just fill in the form and customize the icons and colors. <br>Copy and paste your completed signature from the white box.</h5></div>
   <p style="margin-bottom: 2.5%;"><kbd>Note:</kbd> To remove social media icons, type "x" in the respective input field.</p>
@@ -37,12 +38,15 @@
 		</form>
 		<form class="form-inline">
 		    <select style="width:41.75%; margin-right: 1.5%;" id="mIcon" name="Main icon">
-			  <option value="crown">Default Icon</option>
-			  <option value="diamond">Diamond</option>
-			  <option value="shades">Glasses</option>
-			  <option value="moustache">Moustache</option>
-			  <option value="crown">Tie</option>
-			  <option value="crown">Female</option>
+			  <option value="crown.png">Default Icon</option>
+			  <option value="tie.png">Tie</option>
+			  <option value="glasses.png">Glasses</option>
+			  <option value="star.png">Star</option>
+			  <option value="diamond.png">Diamond</option>
+			  <option value="female.png">Female</option>
+			  <option value="stiletto.png">Stiletto</option>
+			  <option value="chart.png">Chart</option>
+			  <option value="heart.png">Heart</option>
 			</select>
 			<select style="width:41.75%;" id="mColor" name="Main color">
 			  <option value="red">Default Color</option>
@@ -81,7 +85,7 @@
 				                                        <tr>
 				                                            <td width="50" valign="top" align="center" data-bgcolor="Logo BG color" style="background:#4b4d52; moz-border-radius:50px; khtml-border-radius:50px; ms-border-radius:50px; webkit-border-radius:50px; border-radius:50px;">
 				                                                <!-- Add your Avatar or Logo -->
-				                                                <img src="images/logo_wht_small.png" alt="Logo" border="0" style="display:block; border:0; outline:none; padding:20px;" />
+				                                                <img id="changeLogo" src="images/crown.png" alt="Logo" border="0" style="display:block; border:0; outline:none; padding:20px;" />
 				                                            </td>
 				                                            <td valign="middle" align="left" style="color:#ffffff; font-family:'Lato', sans-serif, Arial; font-size:18px; line-height:18px; font-weight:900; padding:0 0 0 15px;">
 				                                                <!-- Edit your Name or Title -->
@@ -99,7 +103,7 @@
 				                            	<table width="320" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
 				                                	<tbody>
 				                                    	<tr>
-				                                            <td width="10%" height="38" valign="middle" style="padding:20px 0 0 20px;"><img src="images/icon-map_blue.png" alt="Map" border="0" width="30" style="display:block; border:0; outline:0;" /></td>
+				                                            <td width="10%" height="38" valign="middle" style="padding:20px 0 0 20px;"><img src="images/icon-map_gray.png" alt="Map" border="0" width="30" style="display:block; border:0; outline:0;" /></td>
 				                                            <!-- Edit your Address -->
 				                                            <td width="90%" height="38" valign="middle" align="left" style="padding:20px 0 0 5px; font-family:'Lato', sans-serif, Arial; font-size:12px; line-height:24px; font-weight:400; color:#4b4d52;"><span id="textOffice">West Rampura, Dhaka, Bangladesh</span></td>
 				                                        </tr>
@@ -112,10 +116,10 @@
 				                            	<table width="320" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
 				                                	<tbody>
 				                                    	<tr> 
-				                                            <td width="14%" height="38" valign="middle" style="padding:0 0 0 20px;"><img src="images/icon-phone_blue.png" alt="Phone" border="0" width="30" style="display:block; border:0; outline:0;" /></td>
+				                                            <td width="14%" height="38" valign="middle" style="padding:0 0 0 20px;"><img src="images/icon-phone_gray.png" alt="Phone" border="0" width="30" style="display:block; border:0; outline:0;" /></td>
 				                                            <!-- Edit your Phone number -->
 				                                            <td width="33%" height="38" valign="middle" align="left" style="padding:0 0 0 5px; font-family:'Lato', sans-serif, Arial; font-size:12px; line-height:24px; font-weight:400; color:#4b4d52;"><span id="textPhone">+8801730496995</span></td>
-				                                            <td width="10%" height="38" valign="middle" style="padding:0 0 0 10px;"><img src="images/icon-email_blue.png" alt="Email" border="0" width="30" style="display:block; border:0; outline:0;" /></td>
+				                                            <td width="10%" height="38" valign="middle" style="padding:0 0 0 10px;"><img src="images/icon-email_gray.png" alt="Email" border="0" width="30" style="display:block; border:0; outline:0;" /></td>
 				                                            <!-- Edit your Email address -->
 				                                            <td width="43%" height="38" valign="middle" align="left" style="padding:0 0 0 5px; font-family:'Lato', sans-serif, Arial; font-size:12px; line-height:24px; font-weight:400; color:#4b4d52;"><a href="mailto:hello@thirdhandbd.com" id="textEmail" style="text-decoration:none; color:#4b4d52;">hello@thirdhandbd.com</span></td>
 				                        				</tr>
@@ -128,9 +132,9 @@
 				                            	<table width="320" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
 				                                	<tbody>
 				                                    	<tr> 
-				                                            <td width="10%" height="38" valign="middle" style="padding:0 0 0 20px;"><img src="images/icon-web_blue.png" alt="Web" border="0" width="30" style="display:block; border:0; outline:0;" /></td>
+				                                            <td width="10%" height="38" valign="middle" style="padding:0 0 0 20px;"><img src="images/icon-web_gray.png" alt="Web" border="0" width="30" style="display:block; border:0; outline:0;" /></td>
 				                                            <!-- Edit your website URL -->
-				                                            <td width="90%" height="38" valign="middle" align="left" style="padding:0 0 0 5px; font-family:'Lato', sans-serif, Arial; font-size:12px; line-height:24px; font-weight:600; color:#0090e3; letter-spacing:2px;"><a href="https://www.thirdhandbd.com" id="textWeb" style="text-decoration:none; color:#0090e3; text-transform: uppercase;">THIRDHANDBD.COM</a></td>
+				                                            <td width="90%" height="38" valign="middle" align="left" style="padding:0 0 0 5px; font-family:'Lato', sans-serif, Arial; font-size:12px; line-height:24px; font-weight:600; color:#0090e3; letter-spacing:2px;"><a href="https://www.thirdhandbd.com" id="textWeb" style="text-decoration:none; color:#a8a8a8; text-transform: uppercase;">THIRDHANDBD.COM</a></td>
 				                        				</tr>
 				                        			</tbody>
 				                                </table>
@@ -143,13 +147,13 @@
 				                                    	<tr> 
 				                                            <!-- Edit your social network URLs -->
 				                                            <td width="90%" colspan="2" align="left" style="padding:10px 0 0 15px;">
-				                                                <a href="#" id="textFB"><img id="hidefb" src="images/social_facebook_dark.png" alt="Facebook" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
-				                                                <a href="#" id="textTweet"><img id="hidetweet" src="images/social_twitter_dark.png" alt="Twitter" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
-				                                                <a href="#" id="textLinkedIn"><img id="hidelinkedin" src="images/social_linkedin_dark.png" alt="LinkedIN" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
-				                                                <a href="#" id="textInsta"><img id="hideinsta" src="images/social_instagram_dark.png" alt="LinkedIN" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
-				                                                <a href="#" id="textSkype"><img id="hideskype" src="images/social_skype_dark.png" alt="LinkedIN" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
-				                                                <a href="#" id="textPin"><img id="hidepin" src="images/social_pinterest_dark.png" alt="LinkedIN" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
-				                                                <a href="#" id="textYT"><img id="hideyt" src="images/social_youtube_v2.png" alt="LinkedIN" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
+				                                                <a href="https://www.facebook.com/thirdhandbd/" id="textFB"><img id="hidefb" src="images/social_facebook_dark.png" alt="Facebook" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
+				                                                <a href="https://www.twitter.com/thirdhandbd/" id="textTweet"><img id="hidetweet" src="images/social_twitter_dark.png" alt="Twitter" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
+				                                                <a href="https://www.linkedin.com/in/tanzir1" id="textLinkedIn"><img id="hidelinkedin" src="images/social_linkedin_dark.png" alt="LinkedIN" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
+				                                                <a href="https://www.instagram.com/thirdhandbd/" id="textInsta"><img id="hideinsta" src="images/social_instagram_dark.png" alt="LinkedIN" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
+				                                                <a href="skype:tanzir_rahman?add" id="textSkype"><img id="hideskype" src="images/social_skype_dark.png" alt="LinkedIN" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
+				                                                <a href="https://www.pinterest.com/thirdhandbd/" id="textPin"><img id="hidepin" src="images/social_pinterest_dark.png" alt="LinkedIN" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
+				                                                <a href="https://www.youtube.com/channel/UCMSQv_QiQJR-8GvkvlCCPSA" id="textYT"><img id="hideyt" src="images/social_youtube_v2.png" alt="LinkedIN" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
 				                                                <a href="#" id="textOtherWeb"><img id="hideotherweb" src="images/other-web-link.png" alt="Google+" width="30" border="0" style="display:inline-block; border:0; outline:none;" /></a>
 				                                            </td>
 				                        				</tr>
